@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chants et Prières</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <nav id="navBar">
+        <h1 id="titre">Chants et Prières</h1>
+        <ul>
+            <li><a href="#" onclick="sommaire()">Sommaire</a></li>
+            <li class="dropdown" id="dropdownMenu">
+                <a href="#" class="dropbtn">Tests</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="paroles()">Paroles</a>
+                    <a href="#" onclick="audio()">Audio</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div id="songList">
+        <h2 id="songChoice">Liste des prières :</h2>
+        <ul>
+            <li><a href="#" onclick="liste(); loadContent('Notre père')">Chanson 1</a></li>
+            <li><a href="#" onclick="liste(); loadContent('Marie')">Chanson 2</a></li>
+            <li><a href="#" onclick="liste(); loadContent('chanson3')">Chanson 3</a></li>
+        </ul>
+        <h2 id="songChoice">Liste des chants :</h2>
+        <ul>
+            <li><a href="#" onclick="liste(); loadContent('chanson1')">Chanson 1</a></li>
+            <li><a href="#" onclick="liste(); loadContent('chanson2')">Chanson 2</a></li>
+            <li><a href="#" onclick="liste(); loadContent('chanson3')">Chanson 3</a></li>
+        </ul>
+    </div>
+    <div id="songListParoles">
+        <h2 id="songChoice">Liste des prières :</h2>
+        <ul>
+            <li><a href="#" onclick="listeParoles(); loadContentParoles('Notre père')">Chanson 1</a></li>
+            <li><a href="#" onclick="listeParoles(); loadContentParoles('Marie')">Chanson 2</a></li>
+            <li><a href="#" onclick="listeParoles(); loadContentParoles('chanson3')">Chanson 3</a></li>
+        </ul>
+        <h2 id="songChoice">Liste des chants :</h2>
+        <ul>
+            <li><a href="#" onclick="listeParoles(); loadContentParoles('chanson1')">Chanson 1</a></li>
+            <li><a href="#" onclick="listeParoles(); loadContentParoles('chanson2')">Chanson 2</a></li>
+            <li><a href="#" onclick="listeParoles(); loadContentParoles('chanson3')">Chanson 3</a></li>
+        </ul>
+    </div>
+    <div id="songListAudio">
+        <h2 id="songChoice">Liste des prières :</h2>
+        <ul>
+            <li><a href="#" onclick="listeAudio(); loadContentAudio('Notre père')">Chanson 1</a></li>
+            <li><a href="#" onclick="listeAudio(); loadContentAudio('Marie')">Chanson 2</a></li>
+            <li><a href="#" onclick="listeAudio(); loadContentAudio('chanson3')">Chanson 3</a></li>
+        </ul>
+        <h2 id="songChoice">Liste des chants :</h2>
+        <ul>
+            <li><a href="#" onclick="listeAudio(); loadContentAudio('chanson1')">Chanson 1</a></li>
+            <li><a href="#" onclick="listeAudio(); loadContentAudio('chanson2')">Chanson 2</a></li>
+            <li><a href="#" onclick="listeAudio(); loadContentAudio('chanson3')">Chanson 3</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h2 id="songTitle"></h2>
+        <audio id="audioPlayer" controls></audio>
+        <div id="lyrics"></div>
+    </div>
+    <div id="paroles">
+        <h2 id="songTitleParoles"></h2>
+        <div id="lyricsParoles"></div>
+    </div>
+    <div id="audio">
+        <h2 id="songTitleAudio"></h2>
+        <audio id="audioPlayerAudio" controls></audio>
+    </div>
+    <script src="./assets/scripts.js"></script>
+</body>
+</html>
