@@ -102,7 +102,7 @@ function loadContent(songName) {
     songTitleElement.textContent = songName + ":"; // elnever ou laisserrrrrrrrrrrrrrrrrrrrrrr
 
     // Charger les paroles
-    fetch(`./assets/lyrics/${songName}.txt`)
+    fetch(`https://hackman13190.github.io/catho-site/assets/lyrics/${songName}.txt`)
         .then(response => response.text())
         .then(text => {
             lyricsElement.innerHTML = text.replace(/\n/g, '<br>'); // Remplacer les sauts de ligne par des balises <br>
@@ -113,7 +113,7 @@ function loadContent(songName) {
         });
 
     // Charger l'audio
-    audioPlayer.src = `./assets/audio/${songName}.mp3`;
+    audioPlayer.src = `https://hackman13190.github.io/catho-site/assets/audio/${songName}.mp3`;
 }
 
 function loadContentParoles(songName) {
@@ -124,7 +124,7 @@ function loadContentParoles(songName) {
     songTitleElement.textContent = songName + ":"; // elnever ou laisserrrrrrrrrrrrrrrrrrrrrrr
 
     // Charger les paroles
-    fetch(`./assets/lyrics/${songName}.txt`)
+    fetch(`https://hackman13190.github.io/catho-site/assets/lyrics/${songName}.txt`)
         .then(response => response.text())
         .then(text => {
             lyricsElement.innerHTML = text.replace(/\n/g, '<br>'); // Remplacer les sauts de ligne par des balises <br>
@@ -143,5 +143,5 @@ function loadContentAudio(songName) {
     songTitleElement.textContent = songName + ":"; // elnever ou laisserrrrrrrrrrrrrrrrrrrrrrr
 
     // Charger l'audio
-    audioPlayer.src = `./assets/audio/${songName}.mp3`;
+    audioPlayer.src = `https://hackman13190.github.io/catho-site/assets/audio/${songName}.mp3`;
 }
