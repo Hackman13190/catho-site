@@ -1,0 +1,3 @@
+Les fichiers audio.mp3 et texte.txt doivent avoir le même nom (les espaces doivent être remplacer par des tirets et ne doivent pas comporter de caractère spéciaux tel que les accents par exemple) mais aussi ils doivent être déposé dans leur dossier respectif.
+
+Pour les inclure dans le fichier index.html il faut choisir la bonne catégorie (chants ou prières), mais aussi répété 3 fois l'action dans chaque div (songList, songListParoles, songListAudio) tout en respectant la mise en forme de chacune.
